@@ -5,8 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="650" MinHeight="330" MinWidth="400">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
 
+        <TextBox x:Name="txtIO" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Height="Auto" BorderBrush="Transparent"></TextBox>
+        <Button x:Name="btn1" Grid.Column="1" Grid.Row="1" Content="1" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn2" Grid.Column="2" Grid.Row="1" Content="2" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn3" Grid.Column="3" Grid.Row="1" Content="3" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn4" Grid.Column="1" Grid.Row="2" Content="4" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn5" Grid.Column="2" Grid.Row="2" Content="5" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn6" Grid.Column="3" Grid.Row="2" Content="6" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn7" Grid.Column="1" Grid.Row="3" Content="7" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn8" Grid.Column="2" Grid.Row="3" Content="8" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn9" Grid.Column="3" Grid.Row="3" Content="9" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btn0" Grid.Column="2" Grid.Row="4" Content="0" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnPlus" Grid.Column="5" Grid.Row="1" Content="+" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnMinus" Grid.Column="5" Grid.Row="2" Content="-" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnMultiply" Grid.Column="5" Grid.Row="3" Content="*" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnDivide" Grid.Column="5" Grid.Row="4" Content="/" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnEquals" Grid.Column="6" Grid.Row="1" Grid.RowSpan="3" Content="=" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        <Button x:Name="btnDelete" Grid.Column="6" Grid.Row="4" Content="C" Margin="5,5,5,5" MinHeight="30" MinWidth="30"/>
+        
     </Grid>
 </Window>
